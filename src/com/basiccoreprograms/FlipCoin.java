@@ -22,7 +22,21 @@ public class FlipCoin {
 		
 		System.out.println(numberOfTimes+" times have to flip the coin");
 		
-		System.out.println("Coin flip got " + coin.flip());
+		// Fliping the coin number of times
+		int headsCount = 0;
+		int tailsCount = 0;
+		for ( int time = 1; time <= numberOfTimes; time++ ) {
+			String coinFlip = coin.flip();
+			if ( coinFlip == coin.HEADS) {
+				headsCount++;
+			} else if ( coinFlip == coin.TAILS) {
+				tailsCount++;
+			}
+		}
+		
+		// Showing percentages
+		System.out.println(coin.HEADS+" occurs "+(headsCount*100/numberOfTimes)+"%");
+		System.out.println(coin.TAILS+" occurs "+(tailsCount*100/numberOfTimes)+"%");
 		
 	}
 
