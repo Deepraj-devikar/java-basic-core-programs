@@ -7,6 +7,7 @@ public class FlipCoin {
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to Flip Coin Problem");
+		Coin coin = new Coin();
 		
 		// INPUT number of times to flip the coin user should have to enter positive integer greater than ZERO
 		Scanner scanner = new Scanner(System.in);
@@ -20,6 +21,8 @@ public class FlipCoin {
 		}
 		
 		System.out.println(numberOfTimes+" times have to flip the coin");
+		
+		System.out.println("Coin flip got " + coin.flip());
 		
 	}
 
