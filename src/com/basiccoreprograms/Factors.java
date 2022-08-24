@@ -3,7 +3,24 @@ package com.basiccoreprograms;
 import java.util.Scanner;
 
 public class Factors {
-
+	
+	public static int getLCF(int number) {
+		for (int i=2; i*i<=number; i++ ) {
+			if ( (number%i) == 0) {
+				return i;
+			}
+		}
+		return number;
+	}
+	
+	public static void factors(int number) {
+		int LCF = getLCF(number);
+		System.out.println(LCF);
+		if (number != LCF) {
+			factors(number/LCF);
+		} 
+	}
+	
 	public static void main(String[] args) {
 		System.out.println("Welcome to Factors Program");
 
@@ -19,6 +36,7 @@ public class Factors {
 		}
 		
 		System.out.println("You have to show "+number+"s Factors");
-
-	}
+		
+		factors(number);
+	}	
 }
