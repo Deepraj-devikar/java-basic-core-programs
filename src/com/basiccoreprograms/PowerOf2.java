@@ -17,6 +17,12 @@ public class PowerOf2 {
 		}
 		
 		System.out.println("You want show power of 2 table upto "+nth);
+		
+		double result = 1;
+		for (int number = 1; number <= nth; number++) {
+			result *= 2;
+			System.out.println("2^"+number+" = "+result);
+		}
 	}
 
 }
