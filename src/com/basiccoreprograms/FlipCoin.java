@@ -35,8 +35,8 @@ public class FlipCoin {
 		}
 		
 		// Showing percentages
-		System.out.println(coin.HEADS+" occurs "+(headsCount*100/numberOfTimes)+"%");
-		System.out.println(coin.TAILS+" occurs "+(tailsCount*100/numberOfTimes)+"%");
+		System.out.println(coin.HEADS+" occurs "+((float)headsCount*100/numberOfTimes)+"%");
+		System.out.println(coin.TAILS+" occurs "+((float)tailsCount*100/numberOfTimes)+"%");
 		
 	}
 
