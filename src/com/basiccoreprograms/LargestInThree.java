@@ -16,6 +16,15 @@ public class LargestInThree {
 		}
 		
 		System.out.println("You entered three numbers are "+numbers[0]+", "+numbers[1]+", "+numbers[2]);
+		
+		int largest = numbers[0];
+		for (int i = 0; i < 3; i++) {
+			if (largest < numbers[i]) {
+				largest = numbers[i];
+			}
+		}
+		
+		System.out.println("Largest number is "+largest);
 	}
 
 }
