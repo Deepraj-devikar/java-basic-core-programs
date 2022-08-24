@@ -20,6 +20,15 @@ public class Harmonic {
 		
 		System.out.println("You have to show "+nth+"s Harmonic Number");
 		
+		System.out.println(nth+"th Harmonic is "+harmonic(nth));
+	}
+	
+	public static double harmonic (int nth) {
+		if (nth == 1) {
+			return 1;
+		} else {
+			return harmonic(nth-1) + ((double)1/nth);
+		}
 	}
 
 }
