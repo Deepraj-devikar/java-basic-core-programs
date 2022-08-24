@@ -27,6 +27,9 @@ public class QuotientAndReminder {
 		
 		System.out.println("Dividend is "+dividend);
 		System.out.println("Divisor is "+divisor);
+		
+		System.out.println("Quotient is "+(dividend/divisor));
+		System.out.println("Reminder is "+(dividend%divisor));
 
 	}
 
