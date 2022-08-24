@@ -20,6 +20,15 @@ public class SwapTwoNumbers {
 		
 		System.out.println("First number is "+first);
 		System.out.println("Second number is "+second);
+		
+		int temp = first;
+		first = second;
+		second = temp;
+		System.out.println("After Swap");
+		
+		System.out.println("First number is "+first);
+		System.out.println("Second number is "+second);
+		
 	}
 
 }
