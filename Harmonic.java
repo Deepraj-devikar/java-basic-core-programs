@@ -1,5 +1,3 @@
-package com.basiccoreprograms;
-
 import java.util.Scanner;
 
 public class Harmonic {
@@ -15,14 +13,12 @@ public class Harmonic {
 			nth = scanner.nextInt();
 			if (nth < 0) {
 				nth = -nth;
-			}	
+			}
 		}
-		
 		System.out.println("You have to show "+nth+"s Harmonic Number");
-		
 		System.out.println(nth+"th Harmonic is "+harmonic(nth));
+		scanner.close();
 	}
-	
 	public static double harmonic (int nth) {
 		if (nth == 1) {
 			return 1;
